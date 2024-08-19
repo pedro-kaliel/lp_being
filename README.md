@@ -6,3 +6,8 @@ inicio da estruturação do cabeçalho
 Cabeçalho com animação em processo de finalização
 banner principal inserido com sucesso 
 rodapé finalizado
+*19/08*
+cabeçalho com animação finalizado
+session com vídeo centralizado finalizada
+inserção de texto no banner principal finalizada
+session com formulário em processo de produção
