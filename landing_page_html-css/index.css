@@ -1,3 +1,4 @@
+
 body{
     margin: 0;
     padding: 0;
@@ -71,7 +72,6 @@ header.rolagem .logo{
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px;
-    background-color: #221d1d;
 }
 
 .contato-btn{
@@ -79,7 +79,7 @@ header.rolagem .logo{
     outline: none;
     background-color: #e52421;
     padding: 9px 20px;
-    border-radius: 50px;
+    border-radius: 20px;
     font-size: 15px;
     color: white;
 }
@@ -122,7 +122,7 @@ header.rolagem .logo{
     color: white;
 }
 
-.formulario{
+.form{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -130,18 +130,20 @@ header.rolagem .logo{
     height: 600px;
 }
 
-.pesquisa{
+.form_background{
     background-color: white;
-    width: 350px;
+    width: 400px;
     height: 500px;
     top: 50px;
     border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .conteudo{
     width: 400px;
     height: 500px;
 }
+
 .submit {
     border: none;
     outline: none;
@@ -149,21 +151,60 @@ header.rolagem .logo{
     padding: 9px 20px;
     font-size: 15px;
     color: white;
-    width: max-content;
+    border-radius: 20px;
+    cursor: pointer;
   }
   
-  input{
+  .main_form{
     width: 80%;
 	margin: 0 auto;
 	padding: 10px;
-	border: none;
+    border-radius: 5px;
 	margin-bottom: 10px;
+    border: none;
+  }
+
+  label{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+   
+  }
+
+  .redirect{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+
+  }
+
+  .postos{
+    background-image: url(image/fan_construcoes.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 200px;
+    width: 50%;
   }
 
 
+  .distribuidora{
+    background-image: url(image/fan_distribuidora.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px;
+    width: 50%;
+  }
 
+  .capital{
+    background-image: url(image/fan_capital.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px;
+    width: 50%;
 
+  }
 
-
-
-
+  
+  
+  
+  
