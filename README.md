@@ -11,3 +11,8 @@ cabeçalho com animação finalizado
 session com vídeo centralizado finalizada
 inserção de texto no banner principal finalizada
 session com formulário em processo de produção
+*20/08*
+session de formuário finalizado
+session de redirecionamento finalizada(aberta a ajustes e melhorias)
+session com card informátivos em processo de produção inicial
+
