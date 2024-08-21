@@ -5,6 +5,11 @@ body{
     box-sizing: border-box;
 }
 
+a{
+    font-weight: normal;
+    font-size: 15px;
+}
+
 header{
     width: 100%;
     position: fixed;
@@ -33,12 +38,17 @@ header.rolagem{
     background-color: white;
 }
 
-header.rolagem li a{
+header.rolagem ul a{
     color: #e52421;
 
 }
 
-.barra_navegacao{
+ul a:hover{
+    color: #e52421;
+
+}
+
+.cabecalho{
     background-color: transparent;
     width: 100%;
     height: 60px 4%;
@@ -46,15 +56,12 @@ header.rolagem li a{
     display: flex;
     align-items: center;
 }
-.barra_navegacao .logo, .contato,.itens{
+
+.cabecalho .logo, .contato,.itens{
     width: 80%;
     display: flex;
     justify-content: center;
     padding: 20px;
-}
-
-.itens, li a:hover{
-    color:  #e52421;
 }
 
 .logo{
@@ -70,7 +77,7 @@ header.rolagem .logo{
     background-image: url(image/logo.png);
 }
 
-.itens li, a{
+.itens ul, a{
     color: white;
     font-size: 16px;
     text-decoration: none;
@@ -88,10 +95,7 @@ header.rolagem .logo{
     padding: 9px 20px;
     border-radius: 20px;
     font-size: 15px;
-    color: white;
-}
-
-.contato-btn{
+    color: rgb(255, 255, 255);
     cursor: pointer;
 }
 
@@ -105,17 +109,17 @@ header.rolagem .logo{
 }
 
 .banner_texto{
-    max-width: 50%;
     display: flexbox;
     justify-content: center;
-    padding: 20px;
     color: white;
     margin-top: auto;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    left: 100px;
 }
 
 .banner_texto h1{
-    font-size: 30px;
+    font-size: 50px;
 }
 
 .banner_texto p{
@@ -123,8 +127,8 @@ header.rolagem .logo{
 
 }
 
-.banner_texto h2{
-    font-size: 120px;
+.banner_texto strong{
+    font-size: 30px;
 }
 
 .video_fan{
@@ -186,44 +190,95 @@ header.rolagem .logo{
 }
 
 .postos{
-    background-image: url(image/fan_construcoes.jpg);
+    background-image: url(image/fan_card.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    padding: 200px;
-    max-height: 100%/6;
+    padding: 90px;
+    max-width: 100%/6;
+    height: 150px;
 }
 
 .distribuidora{
     background-image: url(image/fan_distribuidora.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 200px;
-    max-height: 100%/6;
+    padding: 90px;
+    max-width: 100%/6;
+    height: 150px;
 }
 
 .capital{
     background-image: url(image/fan_capital.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 200px;
-    max-height: 100%/6;
+    padding: 90px;
+    max-width: 100%/6;
+    height: 150px;
+}
 
+.card{
+    background-image: url(image/fan_usibras.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 90px;
+    max-width: 100%/6;
+    height: 150px;
+}
+
+.usibras{
+    background-image: url(image/fan_usibras.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 90px;
+    max-width: 100%/6;
+    height: 150px;
+}
+
+.construcoes{
+    background-image: url(image/fan_construcoes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 90px;
+    max-height: 100%/6;
+    height: 150px;
 }
 
 .galeria_titulo{
-    display: grid;
-    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.galeria_titulo h1{
+    font-size: 30px;
+}
+
+.galeria_titulo p{
+    font-size: 20px;
+
 }
 
 .galeria_titulo p{
     color: black;
 }
 
+.galeria_informativo{
+    background-color: red;
+    height: 600px;
+}
+
+.galeria_titulo strong{
+    font-size: 30px;
+}
+
+
 .cards{
     display: grid;
     grid-template-columns: 200px 200px 200px;
     margin: 0 auto;
     justify-content: center;
+    background-color: aliceblue;
+    max-width: 70%;
 }
 
 .cards p{
@@ -232,6 +287,7 @@ header.rolagem .logo{
 
 .figure{
     background-color: blue;
+    text-align: center;
 }
 
 .rodape{
