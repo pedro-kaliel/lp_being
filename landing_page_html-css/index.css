@@ -13,16 +13,32 @@ header{
     transition: 1s;
 }
 
+label{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+   
+  }
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+span{
+    color: #e52421;
+}
+
 header.rolagem{
     background-color: white;
 }
 
-header.rolagem a{
+header.rolagem li a{
     color: #e52421;
 
 }
 
-.navbar{
+.barra_navegacao{
     background-color: transparent;
     width: 100%;
     height: 60px 4%;
@@ -30,7 +46,7 @@ header.rolagem a{
     display: flex;
     align-items: center;
 }
-.navbar .logo, .contato,.itens{
+.barra_navegacao .logo, .contato,.itens{
     width: 80%;
     display: flex;
     justify-content: center;
@@ -65,15 +81,6 @@ header.rolagem .logo{
     
 }
 
-.video_fan{
-    background-image: url(image/fundo_video.jpg);
-    text-align: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 100px;
-}
-
 .contato-btn{
     border: none;
     outline: none;
@@ -97,29 +104,36 @@ header.rolagem .logo{
     display: flex;
 }
 
-.banner_text{
-    width: 75%;
-    display: flex;
+.banner_texto{
+    max-width: 50%;
+    display: flexbox;
     justify-content: center;
     padding: 20px;
     color: white;
     margin-top: auto;
-    font-size: 2em;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.rodape{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #302c2c;
-    height: 100px;
+.banner_texto h1{
+    font-size: 30px;
 }
 
-.rodape h3{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    color: white;
+.banner_texto p{
+    font-size: 25px;
+
+}
+
+.banner_texto h2{
+    font-size: 120px;
+}
+
+.video_fan{
+    background-image: url(image/fundo_video.jpg);
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
 }
 
 .form{
@@ -130,7 +144,7 @@ header.rolagem .logo{
     height: 600px;
 }
 
-.form_background{
+.form_fundo{
     background-color: white;
     width: 400px;
     height: 500px;
@@ -153,58 +167,123 @@ header.rolagem .logo{
     color: white;
     border-radius: 20px;
     cursor: pointer;
-  }
+}
   
-  .main_form{
+.coleta_dados{
     width: 80%;
-	margin: 0 auto;
-	padding: 10px;
+    margin: 0 auto;
+    padding: 10px;
     border-radius: 5px;
-	margin-bottom: 10px;
+    margin-bottom: 10px;
     border: none;
-  }
+}
 
-  label{
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-   
-  }
-
-  .redirect{
+  .galeria_empresas{
     display: flex;
     align-items: center;
     margin: 0 auto;
 
-  }
+}
 
-  .postos{
-    background-image: url(image/fan_construcoes.jpg);
+.postos{
+    background-image: url(image/fan_card.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    padding: 200px;
-    width: 50%;
-  }
+    padding: 90px;
+    max-width: 100%/6;
+    height: 150px;
+}
 
-
-  .distribuidora{
+.distribuidora{
     background-image: url(image/fan_distribuidora.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 200px;
-    width: 50%;
-  }
+    padding: 90px;
+    max-width: 100%/6;
+    height: 150px;
+}
 
-  .capital{
+.capital{
     background-image: url(image/fan_capital.jpg);
-    
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 200px;
-    width: 50%;
+    padding: 90px;
+    max-width: 100%/6;
+    height: 150px;
+}
 
-  }
+.card{
+    background-image: url(image/fan_usibras.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 90px;
+    max-width: 100%/6;
+    height: 150px;
+}
 
-  
-  
-  
-  
+.usibras{
+    background-image: url(image/fan_usibras.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 90px;
+    max-width: 100%/6;
+    height: 150px;
+}
+
+.construcoes{
+    background-image: url(image/fan_construcoes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 90px;
+    max-height: 100%/6;
+    height: 150px;
+}
+
+.galeria_titulo{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.galeria_titulo h1{
+    font-size: 30px;
+}
+
+.galeria_titulo p{
+    font-size: 20px;
+
+}
+
+.galeria_titulo p{
+    color: black;
+}
+
+.galeria_informativo{
+    background-color: red;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: aliceblue;
+    max-width: 70%;
+}
+
+.cards p{
+    color: black;
+}
+
+.figure{
+    background-color: blue;
+    text-align: center;
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #302c2c;
+    height: 100px;
+}

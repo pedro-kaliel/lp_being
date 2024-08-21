@@ -8,103 +8,145 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <header id="header">
-        <div class="flex-container">
-            <div class="navbar">
-                <div class="logo">
-                </div>
-                <div class="itens">
-                    <li><a href="#">Nossas empresas</a></li>
-                    <li><a href="#">Institucional</a></li>
-                    <li><a href="#">Inscreva-se</a></li>
-                </div>
-                <div class="contato">
-                    <button class="contato-btn">contato</button>
-                </div>
-            </div>
-        </div>
-    </header>
     <main>
-        <section class="banner">
-            <div class="banner_text">
-                <h1>Há 60 anos o grupo FAN faz mais...</h1>
+        <header id="header">
+            <div class="cabecalho">
+                <div class="barra_navegacao">
+                    <div class="logo">
+                    </div>
+                    <div class="itens">
+                        <li><a href="#">Nossas empresas</a></li>
+                        <li><a href="#">Institucional</a></li>
+                        <li><a href="#">Inscreva-se</a></li>
+                    </div>
+                    <div class="contato">
+                        <a href="#" class="contato-btn">contato</a>
+                    </div>
+                </div>
             </div>
+        </header>      
+        <section class="banner">
+            <article class="banner_texto">
+                <h1>Há 60 anos o grupo FAN faz mais...</h1>
+                <p>Somos compostos por 6 empresas que crescem juntas diariamente</p>
+                <h3>Conheça o que podemos fazer por você</h3>
+            </article>
         </section>
         <section class="form">
             <figure>
                 <img src="image/conteudo.png" alt="" class="conteudo">
             </figure>
-            <div class="form_background">
-                <form action="#">
+            <div class="form_fundo">
+                <form action="#" id="form">
                     <center>
                         <h1>Inscrição</h1>
-
-                        <input type="text" placeholder="Nome" class="main_form" id="nome">
-                        <input type="email" placeholder="Email" class="main_form" id="email">
-                        <input type="tel" placeholder="Telefone" class="main_form" id="tel">
-                        <input type="text" placeholder="Empresa" class="main_form" id="empresa">
-                        <input type="text" placeholder="Cidade" class="main_form" id="cidade">
-                        <input type="text" placeholder="Segmento" class="main_form" id="segmento">
+                        <input type="text" placeholder="Nome*" class="coleta_dados" id="nome">
+                        <input type="email" placeholder="Email*" class="coleta_dados" id="email">
+                        <input type="tel" placeholder="Telefone" class="coleta_dados" id="tel">
+                        <input type="text" placeholder="Empresa*" class="coleta_dados" id="emp">
+                        <input type="text" placeholder="Cidade" class="coleta_dados" id="cidade">
+                        <input type="text" placeholder="Segmento" class="coleta_dados" id="segmento">
                         <br>
                         <input type="checkbox" id="check" class="check">
                         <label for="check" >Concordo com a Politica de Privacidade</label>
                         <br>
                         <br>
-                        <button class="submit">Enviar</button>
-                    </center>
-            
+                        <button class="submit" name="submit" id="submit" onclick="cadastro()">Enviar</button>
+                    </center>  
                 </form>
             </div>
         </section>
-
         <section class="video">
             <div class="video_fan">
                 <video src="video/O Grupo FAN.mp4" controls></video>
             </div>
         </section>
-
-        <section class="redirect">
-        
+        <section class="galeria_empresas">
             <div class="postos">
-           
+                <span>FAN</span><p>postos</p>
             </div>
             <div class="distribuidora">
-                
+                <span>FAN</span><p>postos</p>
             </div>
-
             <div class="capital">
-                
-
+                <span>FAN</span><p>postos</p>
             </div>
-           
-            
+            <div class="card">
+                <span>FAN</span><p>postos</p>
+            </div>
+            <div class="usibras">
+                <span>FAN</span><p>postos</p>
+            </div>
+            <div class="construcoes">
+                <span>FAN</span><p>postos</p>
+            </div>
         </section>
-
-        <section class="cards">
-            <h1>Somos compostoos por 6 empresas que crescem todos os dias </h1>
-            <figure class="figure1">
-                <img src="image/logo_sem_fundo.png" alt="">
-                <figcaption>FAN construções</figcaption>
-                <p></p>
+        <section class="galeria_informativo">
+            <article class="galeria_titulo">
+                <h1>Conheça um pouco sobre nós</h1>
+                <p>Somos compostos por 6 empresas que crescem juntas todos os dias</p>
+            </article>
+            <div class="cards">
+                <article>
+                    <figure class="figure">
+                        <img src="image/logo_sem_fundo.png" alt="">
+                        <figcaption>FAN construções</figcaption>
+                        <p>texto texto texto texto texto texto</p>
+                        <a href="#">saiba mais</a>
+                    </figure>
+                </article>
+                <article>
+                    <figure class="figure">
+                        <img src="image/logo_sem_fundo.png" alt="">
+                        <figcaption>FAN construções</figcaption>
+                        <p>texto texto texto texto texto texto</p>
+                        <a href="#">saiba mais</a>
+                    </figure>
+                </article>
+                <article>
+                    <figure class="figure">
+                        <img src="image/logo_sem_fundo.png" alt="">
+                        <figcaption>FAN construções</figcaption>
+                        <p>texto texto texto texto texto texto</p>
+                        <a href="#">saiba mais</a>
+                    </figure>
+                </article>
+                <article>
+                    <figure class="figure">
+                        <img src="image/logo_sem_fundo.png" alt="">
+                        <figcaption>FAN construções</figcaption>
+                        <p>texto texto texto texto texto texto</p>
+                        <a href="#">saiba mais</a>
+                    </figure>
+                </article>
+                <article>
+                    <figure class="figure">
+                        <img src="image/logo_sem_fundo.png" alt="">
+                        <figcaption>FAN construções</figcaption>
+                        <p>texto texto texto texto texto texto</p>
+                        <a href="#">saiba mais</a>
+                    </figure>
+                </article>
+                <article>
+                    <figure class="figure">
+                        <img src="image/logo_sem_fundo.png" alt="">
+                        <figcaption>FAN construções</figcaption>
+                        <p>texto texto texto texto texto texto</p>
+                        <a href="#">saiba mais</a>
+                    </figure>
+                </article>
+            </div>
+        </section>
+        <footer class="rodape">
+            <div class="img">
+                <figure>
+                    <img src="image/logo_branca_sem_fundo.png" alt="">
             </figure>
-            <figure class="figure2"></figure>
-            <figure class="figure3"></figure>
-            <figure class="figure4"></figure>
-            <figure class="figure5"></figure>
-            <figure class="figure6"></figure>
-
-        </section>
+            </div>
+            <div >
+                    <p>Política de Privacidade</p>
+            </div>
+        </footer>
     </main>
-    
-    <footer class="rodape">
-        <div class="img">
-            <figure>
-                <img src="image/logo_branca_sem_fundo.png" alt="">
-        </figure>
-        </div>
-        <div class="text">
-                <h3>Política de Privacidade</h3>
-        </div>
-    </footer>
 </body>
 </html>
