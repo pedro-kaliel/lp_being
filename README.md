@@ -15,4 +15,8 @@ session com formulário em processo de produção
 session de formuário finalizado
 session de redirecionamento finalizada(aberta a ajustes e melhorias)
 session com card informátivos em processo de produção inicial
+*21/08*
+session de formulário com validação de campos finalizada
+ajustes na session de redirecionamento realizados(melhor agora)
+session com cards informativos em processo de estilização
 
