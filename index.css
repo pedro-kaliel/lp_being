@@ -5,11 +5,6 @@ body{
     box-sizing: border-box;
 }
 
-a{
-    font-weight: normal;
-    font-size: 15px;
-}
-
 header{
     width: 100%;
     position: fixed;
@@ -28,7 +23,7 @@ p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     color: white;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 span{
@@ -193,7 +188,7 @@ header.rolagem .logo{
     display: grid;
     grid-template-columns: auto auto auto auto auto ;
     max-width: 100%;
-    height: 400px;
+    height: 500px;
 }
 
 .empresas_galeria p{
@@ -201,12 +196,11 @@ header.rolagem .logo{
     background-color: rgb(255, 255, 255);
     color: black;
     width: 100px;
-    height: 25px;
     text-align: center;
 }
 
 .postos{
-    background-image: url(image/fan_usibras.jpg);
+    background-image: url(image/fan_postos.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -319,7 +313,6 @@ header.rolagem .logo{
 .cards a:hover{
     background-color: #bb1f1c;
     transition: 0.3s;
-
 }
 
 .rodape{
@@ -327,5 +320,4 @@ header.rolagem .logo{
     justify-content: space-around;
     align-items: center;
     background-color: #302c2c;
-    height: 100px;
 }
