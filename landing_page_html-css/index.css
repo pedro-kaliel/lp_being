@@ -5,11 +5,6 @@ body{
     box-sizing: border-box;
 }
 
-a{
-    font-weight: normal;
-    font-size: 15px;
-}
-
 header{
     width: 100%;
     position: fixed;
@@ -28,10 +23,12 @@ p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     color: white;
+    font-weight: 600;
 }
 
 span{
     color: #e52421;
+    font-weight: 600;
 }
 
 header.rolagem{
@@ -54,14 +51,14 @@ ul a:hover{
     height: 60px 4%;
     color: transparent;
     display: flex;
-    align-items: center;
+    justify-content: space-around;
 }
 
 .cabecalho .logo, .contato,.itens{
-    width: 80%;
+    width: 100%;
     display: flex;
-    justify-content: center;
     padding: 20px;
+    justify-content: space-around;
 }
 
 .logo{
@@ -84,7 +81,7 @@ header.rolagem .logo{
     list-style: none;
     margin: 10px;
     transition: color .3s;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     
 }
 
@@ -105,17 +102,21 @@ header.rolagem .logo{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
     display: flex;
+    color: white;
+    
+   
 }
 
 .banner_texto{
     display: flexbox;
     justify-content: center;
-    color: white;
+    align-items: center;
     margin-top: auto;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 20px;
-    left: 100px;
+    margin-left: 180px;
+    margin-bottom: 90px;
 }
 
 .banner_texto h1{
@@ -155,6 +156,7 @@ header.rolagem .logo{
     top: 50px;
     border-radius: 5px;
     font-family: Arial, Helvetica, sans-serif;
+    margin-right: 15px;
 }
 
 .conteudo{
@@ -182,103 +184,110 @@ header.rolagem .logo{
     border: none;
 }
 
-  .galeria_empresas{
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
+.empresas_galeria{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto ;
+    max-width: 100%;
+    height: 500px;
+}
 
+.empresas_galeria p{
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    width: 100px;
+    text-align: center;
 }
 
 .postos{
-    background-image: url(image/fan_card.jpg);
+    background-image: url(image/fan_postos.jpg);
     background-repeat: no-repeat;
-    background-size:cover;
-    padding: 90px;
-    max-width: 100%/6;
-    height: 150px;
+    background-size: cover;
+}
+
+.postos p{
+    position: relative;
+    bottom: -180px;
+    left: 80px;
 }
 
 .distribuidora{
     background-image: url(image/fan_distribuidora.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 90px;
-    max-width: 100%/6;
-    height: 150px;
+}
+
+.distribuidora p{
+    position: relative;
+    top: 70px;
+    left: 20px;
 }
 
 .capital{
     background-image: url(image/fan_capital.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 90px;
-    max-width: 100%/6;
-    height: 150px;
+    
 }
 
-.card{
-    background-image: url(image/fan_usibras.jfif);
+.capital p{
+    position: relative;
+    bottom: -300px;
+    left: 30px;
+}
+
+.cartao{
+    background-image: url(image/fan_card.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 90px;
-    max-width: 100%/6;
-    height: 150px;
+}
+
+.cartao p{
+    position: relative;
+    bottom: -250px;
+    left: 70px;
 }
 
 .usibras{
     background-image: url(image/fan_usibras.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 90px;
-    max-width: 100%/6;
-    height: 150px;
+    
 }
 
-.construcoes{
-    background-image: url(image/fan_construcoes.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 90px;
-    max-height: 100%/6;
-    height: 150px;
+.usibras p{
+    position: relative;
+    bottom: -170px;
+    left: 150px;
 }
 
-.galeria_titulo{
+.informativo{
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;   
+    background-color: aliceblue;
 
 }
 
-.galeria_titulo h1{
+.galeria_titulo p{
     font-size: 30px;
-}
+    color: #e52421;
+    font-weight: 500;
 
-.galeria_titulo p{
-    font-size: 20px;
-
-}
-
-.galeria_titulo p{
-    color: black;
-}
-
-.galeria_informativo{
-    background-color: red;
-    height: 600px;
 }
 
 .galeria_titulo strong{
-    font-size: 30px;
+    color: black;
 }
-
 
 .cards{
     display: grid;
-    grid-template-columns: 200px 200px 200px;
-    margin: 0 auto;
+    justify-content: space-evenly;
+    grid-template-columns: 300px 300px 300px;
+    margin:  auto;
     justify-content: center;
+    align-items: center;
     background-color: aliceblue;
-    max-width: 70%;
+    max-width: 90%;
 }
 
 .cards p{
@@ -286,8 +295,24 @@ header.rolagem .logo{
 }
 
 .figure{
-    background-color: blue;
+    background-color: white;
     text-align: center;
+    border-radius: 10px;
+    width: 250px;
+    height: 300px;
+}
+
+.cards a{
+    background-color: #e52421;
+    padding: 9px 70px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.cards a:hover{
+    background-color: #bb1f1c;
+    transition: 0.3s;
 }
 
 .rodape{
@@ -295,5 +320,4 @@ header.rolagem .logo{
     justify-content: space-around;
     align-items: center;
     background-color: #302c2c;
-    height: 100px;
 }
