@@ -275,7 +275,7 @@ header.rolagem .logo{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;   
     background-color: aliceblue;
-
+    height: 800px;
 }
 
 .galeria_titulo p{
@@ -292,20 +292,20 @@ header.rolagem .logo{
 .cards{
     display: grid;
     justify-content: space-evenly;
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: 350px 350px 350px;
     margin:  auto;
     justify-content: center;
     align-items: center;
     background-color: aliceblue;
-    max-width: 90%;
+    width: 100%;
 }
 
 .figure{
     background-color: white;
     text-align: center;
     border-radius: 10px;
-    width: 250px;
-    height: 300px;
+    width: 300px;
+    height: 310px;
 }
 
 .cards p{
@@ -316,7 +316,7 @@ header.rolagem .logo{
 
 .cards a{
     background-color: #e52421;
-    padding: 9px 70px;
+    padding: 9px 100px;
     font-size: 15px;
     color: white;
     cursor: pointer;
