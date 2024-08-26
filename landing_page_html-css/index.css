@@ -165,13 +165,12 @@ header.rolagem .logo{
 }
 
 .submit {
+    background-color: #302c2c;
     border: none;
-    outline: none;
-    background-color: #e52421;
     padding: 9px 20px;
     font-size: 15px;
+    width: 340px;
     color: white;
-    border-radius: 20px;
     cursor: pointer;
 }
   
@@ -252,7 +251,6 @@ header.rolagem .logo{
     background-image: url(image/fan_usibras.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 
 .usibras p{
