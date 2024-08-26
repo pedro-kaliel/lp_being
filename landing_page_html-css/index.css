@@ -210,7 +210,7 @@ header.rolagem .logo{
 }
 
 .distribuidora{
-    background-image: url(image/fan_distribuidora.png);
+    background-image: url(image/fan_distribuidora.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -266,7 +266,7 @@ header.rolagem .logo{
 
 .construcoes p{
     position: relative;
-    bottom: -70px;
+    bottom: -120px;
     left: 100px;
 }
 
