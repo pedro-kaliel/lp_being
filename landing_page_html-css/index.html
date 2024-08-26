@@ -11,15 +11,15 @@
 
     <header id="header">
         <nav class="cabecalho">
-            <figure class="logo">
-            </figure>
+            <div class="logo">
+            </div>
             <ul class="itens">
-                <li><a href="#">Nossas empresas</a></li>
-                <li><a href="#">Contatos</a></li>
-                <li><a href="#">Cadastre-se</a></li>
+                <li><a href="#" title="nossas empresas">Nossas empresas</a></li>
+                <li><a href="#" title="contatos">Contatos</a></li>
+                <li><a href="#" title="cadastre-se">Cadastre-se</a></li>
             </ul>
             <div class="contato">
-                <a href="#" class="contato-btn">contato</a>
+                <a href="#"  class="contato-btn">contato</a>
             </div>
         </nav>
     </header>   
@@ -27,7 +27,7 @@
     <main>
         <section class="banner">
             <article class="banner_texto">
-                <h1>Há 60 anos o grupo FAN <br> faz mais...</h1>
+                <h2>Há 60 anos o grupo FAN <br> faz mais...</h2>
                 <p>Somos compostos por 6 empresas <br>que crescem juntas diariamente</p>
                 <strong>Conheça o que podemos fazer por você</strong>
             </article>
@@ -39,33 +39,24 @@
             </figure>
             <div class="form_fundo">
                 <form action="#" id="form">
-                    <center>
-                        <h1>Inscrição</h1>
-                        <input type="text" placeholder="Nome*" class="coleta_dados" id="nome">
-                        <input type="email" placeholder="Email*" class="coleta_dados" id="email">
-                        <input type="tel" placeholder="Telefone" class="coleta_dados" id="tel">
-                        <input type="text" placeholder="Empresa*" class="coleta_dados" id="emp">
-                        <input type="text" placeholder="Cidade" class="coleta_dados" id="cidade">
-                        <input type="text" placeholder="Segmento" class="coleta_dados" id="segmento">
-                        <br>
-                        <input type="checkbox" id="check1" class="check">
-                        <label for="check1" >opc1</label>
-                        <input type="checkbox" id="check2" class="check">
-                        <label for="check2" >opc2</label>
-                        <input type="checkbox" id="check3" class="check">
-                        <label for="check3" >opc3</label>
-                        <input type="checkbox" id="check4" class="check">
-                        <label for="check4" >opc4</label>
-                        <input type="checkbox" id="check5" class="check">
-                        <label for="check5" >opc5</label>
-                        <br>
-                        
-                        <input type="checkbox" id="check6" class="check">
-                        <label for="check6" >Concordo com a Politica de Privacidade</label>
-                        <br>
-                        <br>
-                        <button class="submit" name="submit" id="submit" onclick="cadastro()">Enviar</button>
-                    </center>  
+                   
+                    <h1>Inscrição</h1>
+                    <input type="text" placeholder="Nome*" class="coleta_dados" id="nome">
+                    <input type="email" placeholder="Email*" class="coleta_dados" id="email">
+                    <input type="tel" placeholder="Telefone" class="coleta_dados" id="tel">
+                    <input type="text" placeholder="Empresa*" class="coleta_dados" id="emp">
+                    <input type="text" placeholder="Cidade" class="coleta_dados" id="cidade">
+                    <input type="text" placeholder="Segmento" class="coleta_dados" id="segmento">
+                    <br>
+                   
+                    <br>
+                    
+                    <input type="checkbox" id="check6" class="check">
+                    <label for="check6" >Concordo com a Politica de Privacidade</label>
+                    <br>
+                    <br>
+                    <button class="submit" name="submit" id="submit" onclick="cadastro()">Enviar</button>
+                   
                 </form>
             </div>
         </section>
@@ -104,70 +95,81 @@
             </article>
 
             <div class="cards">
-                <figure class="figure">
-                    <img src="image/logo_sem_fundo.png" alt="">
-                    <figcaption class="caption">
-                        <strong>construções</strong> 
-                        <p>texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto </p>
-                    </figcaption>
-                    <a href="#">saiba mais</a>
-                </figure>
+                <article class="figure">
+                    <figure>
+                        <img src="image/logo_sem_fundo.png" alt="">
+                        <figcaption class="caption">
+                            <strong>construções</strong> 
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus. Integer vehicula mattis congue. Phasellus dignissim nisl sem, eu pellentesque ipsum efficitur nec. Maecenas magna elit, mattis non ultrices et, viverra non lectus. In ac elit venenatis libero tempus.</p>
+                        </figcaption>
+                        <a href="#">saiba mais</a>
+                    </figure>
+                </article>
             
-            
-                <figure class="figure">
-                    <img src="image/logo_sem_fundo.png" alt="">
-                    <figcaption class="caption">
-                        <strong>construções</strong> 
-                        <p>texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto</p>
-                    </figcaption>
-                    <a href="#">saiba mais</a>
-                </figure>
+                <article  class="figure">
+                    <figure>
+                        <img src="image/logo_sem_fundo.png" alt="">
+                        <figcaption class="caption">
+                            <strong>construções</strong> 
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus. Integer vehicula mattis congue. Phasellus dignissim nisl sem, eu pellentesque ipsum efficitur nec. Maecenas magna elit, mattis non ultrices et, viverra non lectus. In ac elit venenatis libero tempus.</p>
+                        </figcaption>
+                        <a href="#">saiba mais</a>
+                    </figure>
+                </article>
         
             
-                <figure class="figure">
-                    <img src="image/logo_sem_fundo.png" alt="">
-                    <figcaption class="caption">
-                        <strong>construções</strong> 
-                        <p>texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto</p>
-                    </figcaption>
-                    <a href="#">saiba mais</a>
-                </figure>
+                <article class="figure">
+                    <figure>
+                        <img src="image/logo_sem_fundo.png" alt="">
+                        <figcaption class="caption">
+                            <strong>construções</strong> 
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus. Integer vehicula mattis congue. Phasellus dignissim nisl sem, eu pellentesque ipsum efficitur nec. Maecenas magna elit, mattis non ultrices et, viverra non lectus. In ac elit venenatis libero tempus. </p>
+                        </figcaption>
+                        <a href="#">saiba mais</a>
+                    </figure>
+                </article>
+
+                <article class="figure">
+                    <figure>
+                        <img src="image/logo_sem_fundo.png" alt="">
+                        <figcaption class="caption">
+                            <strong>construções</strong> 
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus. Integer vehicula mattis congue. Phasellus dignissim nisl sem, eu pellentesque ipsum efficitur nec. Maecenas magna elit, mattis non ultrices et, viverra non lectus. In ac elit venenatis libero tempus. </p>
+                        </figcaption>
+                        <a href="#">saiba mais</a>
+                    </figure>
+                </article>
             
-                <figure class="figure">
-                    <img src="image/logo_sem_fundo.png" alt="">
-                    <figcaption class="caption">
-                        <strong>construções</strong> 
-                        <p>texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto</p>
-                    </figcaption>
-                    <a href="#">saiba mais</a>
-                </figure>
+                <article class="figure">
+                    <figure>
+                        <img src="image/logo_sem_fundo.png" alt="">
+                        <figcaption class="caption">
+                            <strong>construções</strong> 
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus. Integer vehicula mattis congue. Phasellus dignissim nisl sem, eu pellentesque ipsum efficitur nec. Maecenas magna elit, mattis non ultrices et, viverra non lectus. In ac elit venenatis libero tempus. </p>
+                        </figcaption>
+                        <a href="#">saiba mais</a>
+                    </figure>
+                </article>
             
-                <figure class="figure">
-                    <img src="image/logo_sem_fundo.png" alt="">
-                    <figcaption class="caption">
-                        <strong>construções</strong> 
-                        <p>texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto</p>
-                    </figcaption>
-                    <a href="#">saiba mais</a>
-                </figure>
-            
-                <figure class="figure">
-                    <img src="image/logo_sem_fundo.png" alt="">
-                    <figcaption class="caption">
-                        <strong>construções</strong> 
-                        <p>texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto</p>
-                    </figcaption>
-                    <a href="#">saiba mais</a>
-                </figure>
+                <article class="figure">
+                    <figure >
+                        <img src="image/logo_sem_fundo.png" alt="">
+                        <figcaption class="caption">
+                            <strong>construções</strong> 
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus. Integer vehicula mattis congue. Phasellus dignissim nisl sem, eu pellentesque ipsum efficitur nec. Maecenas magna elit, mattis non ultrices et, viverra non lectus. In ac elit venenatis libero tempus.</p>
+                        </figcaption>
+                        <a href="#">saiba mais</a>
+                    </figure>
+                </article>
             </div>
         </section>
-        <footer class="rodape">
-            <figure class="img">
-                <img src="image/logo_branca_sem_fundo.png" alt="">
-            </figure>
-            
-            <a href="#">Política de Privacidade</a>
-        </footer>
     </main>
+    <footer class="rodape">
+        <figure class="img">
+            <img src="image/logo_branca_sem_fundo.png" alt="">
+        </figure>
+        
+        <a href="#">Política de Privacidade</a>
+    </footer>
 </body>
 </html>

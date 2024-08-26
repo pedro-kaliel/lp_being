@@ -4,14 +4,6 @@ body{
     box-sizing: border-box;
 }
 
-header{
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: 1s;
-}
-
 label{
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
@@ -25,13 +17,20 @@ p{
     font-weight: 600;
 }
 
-span{
-    color: #e52421;
-    font-weight: 600;
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 1s;
 }
 
 header.rolagem{
     background-color: white;
+}
+
+header.rolagem .logo{
+    background-image: url(image/logo.png);
 }
 
 header.rolagem ul a{
@@ -69,9 +68,7 @@ ul a:hover{
     transition: 1s;
 }
 
-header.rolagem .logo{
-    background-image: url(image/logo.png);
-}
+
 
 .itens ul, a{
     color: white;
@@ -104,8 +101,6 @@ header.rolagem .logo{
 
     display: flex;
     color: white;
-    
-   
 }
 
 .banner_texto{
@@ -118,7 +113,7 @@ header.rolagem .logo{
     margin-bottom: 90px;
 }
 
-.banner_texto h1{
+.banner_texto h2{
     font-size: 50px;
 }
 
@@ -146,16 +141,18 @@ header.rolagem .logo{
     align-items: center;
     background-color: #e52421;
     height: 600px;
+    
 }
 
 .form_fundo{
     background-color: white;
-    width: 400px;
+    width: 320px;
     height: 500px;
     top: 50px;
     border-radius: 5px;
     font-family: Arial, Helvetica, sans-serif;
     margin-right: 15px;
+    padding: 20px;
 }
 
 .conteudo{
@@ -163,23 +160,23 @@ header.rolagem .logo{
     height: 500px;
 }
 
+.coleta_dados{
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: rgb(131, 127, 127);
+    margin: 10px;
+}
+
 .submit {
     background-color: #302c2c;
     border: none;
     padding: 9px 20px;
     font-size: 15px;
-    width: 340px;
+    width: 300px;
     color: white;
     cursor: pointer;
-}
-
-.coleta_dados{
-    width: 80%;
-    margin: 0 auto;
-    padding: 10px;
     border-radius: 5px;
-    margin-bottom: 10px;
-    border: none;
 }
 
 .empresas_galeria{
@@ -198,74 +195,74 @@ header.rolagem .logo{
     text-align: center;
 }
 
-.postos{
+.empresas_galeria .postos{
     background-image: url(image/fan_postos.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.postos p{
+.empresas_galeria .postos p{
     position: relative;
     bottom: -240px;
     left: 80px;
 }
 
-.distribuidora{
+.empresas_galeria .distribuidora{
     background-image: url(image/fan_distribuidora.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.distribuidora p{
+.empresas_galeria .distribuidora p{
     position: relative;
     top: 50px;
     left: 20px;
 }
 
-.capital{
+.empresas_galeria .capital{
     background-image: url(image/fan_capital.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     
 }
 
-.capital p{
+.empresas_galeria .capital p{
     position: relative;
     bottom: -300px;
     left: 30px;
 }
 
-.cartao{
+.empresas_galeria .cartao{
     background-image: url(image/fan_card.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.cartao p{
+.empresas_galeria .cartao p{
     position: relative;
     bottom: -250px;
     left: 70px;
 }
 
-.usibras{
+.empresas_galeria .usibras{
     background-image: url(image/fan_usibras.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.usibras p{
+.empresas_galeria .usibras p{
     position: relative;
     bottom: -170px;
     left: 150px;
 }
 
-.construcoes{
+.empresas_galeria .construcoes{
     background-image: url(image/fan_construcoes.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.construcoes p{
+.empresas_galeria .construcoes p{
     position: relative;
     bottom: -120px;
     left: 100px;
@@ -275,7 +272,6 @@ header.rolagem .logo{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;   
     background-color: aliceblue;
-    height: 800px;
 }
 
 .galeria_titulo p{
@@ -291,7 +287,7 @@ header.rolagem .logo{
 
 .cards{
     display: grid;
-    grid-template-columns: 350px 350px 350px;
+    grid-template-columns: 300px 300px 300px ;
     justify-content: center;
 
     background-color: aliceblue;
@@ -299,10 +295,11 @@ header.rolagem .logo{
 }
 
 .figure{
+    display: flexbox;
+    text-align: start;
     background-color: white;
     border-radius: 10px;
-    width: 300px;
-    height: 310px;
+    margin: 10px;
 }
 
 .caption p{
@@ -313,7 +310,7 @@ header.rolagem .logo{
 
 .cards a{
     background-color: #e52421;
-    padding: 9px 100px;
+    margin: 20px;
     font-size: 15px;
     color: white;
     cursor: pointer;
