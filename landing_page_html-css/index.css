@@ -187,7 +187,7 @@ header.rolagem .logo{
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     max-width: 100%;
-    height: 500px;
+    height: 400px;
 }
 
 .empresas_galeria p{
@@ -267,7 +267,7 @@ header.rolagem .logo{
 
 .construcoes p{
     position: relative;
-    bottom: -270px;
+    bottom: -70px;
     left: 100px;
 }
 
