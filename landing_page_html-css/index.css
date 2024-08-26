@@ -1,7 +1,6 @@
-
 body{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -293,7 +292,6 @@ header.rolagem .logo{
     display: grid;
     justify-content: space-evenly;
     grid-template-columns: 350px 350px 350px;
-    margin:  auto;
     justify-content: center;
     align-items: center;
     background-color: aliceblue;
