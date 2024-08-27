@@ -19,7 +19,7 @@
                 <li><a href="#" title="cadastre-se">Cadastre-se</a></li>
             </ul>
             <div class="contato">
-                <a href="#"  class="contato-btn">contato</a>
+                
             </div>
         </nav>
     </header>   
@@ -27,7 +27,7 @@
     <main>
         <section class="banner">
             <article class="banner_texto">
-                <h2>Há 60 anos o grupo FAN <br> faz mais...</h2>
+                <h1>Há 60 anos o grupo FAN <br> faz mais...</h1>
                 <p>Somos compostos por 6 empresas <br>que crescem juntas diariamente</p>
                 <strong>Conheça o que podemos fazer por você</strong>
             </article>
@@ -37,26 +37,42 @@
             <figure>
                 <img src="image/conteudo.png" alt="" class="conteudo">
             </figure>
-            <div class="form_fundo">
+            <div class="container">
                 <form action="#" id="form">
-                   
-                    <h1>Inscrição</h1>
-                    <input type="text" placeholder="Nome*" class="coleta_dados" id="nome">
-                    <input type="email" placeholder="Email*" class="coleta_dados" id="email">
-                    <input type="tel" placeholder="Telefone" class="coleta_dados" id="tel">
-                    <input type="text" placeholder="Empresa*" class="coleta_dados" id="emp">
-                    <input type="text" placeholder="Cidade" class="coleta_dados" id="cidade">
-                    <input type="text" placeholder="Segmento" class="coleta_dados" id="segmento">
-                    <br>
-                   
-                    <br>
-                    
-                    <input type="checkbox" id="check6" class="check">
-                    <label for="check6" >Concordo com a Politica de Privacidade</label>
-                    <br>
-                    <br>
-                    <button class="submit" name="submit" id="submit" onclick="cadastro()">Enviar</button>
-                   
+                    <h2>Inscrição</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. </p>
+                    <div class="inputs_principais">
+                        <input type="text" placeholder="Nome*" class="coleta_dados" id="nome">
+                        <input type="email" placeholder="Email*" class="coleta_dados" id="email">
+                        <input type="tel" placeholder="Telefone" class="coleta_dados" id="tel">
+                        <input type="text" placeholder="Empresa*" class="coleta_dados" id="emp">
+                        <input type="text" placeholder="Cidade" class="coleta_dados" id="cidade">
+                        <input type="text" placeholder="Segmento" class="coleta_dados" id="segmento">
+                    </div>
+                    <span>Quero saber mais informações desses negócios:</span>
+                    <div class="checks">
+                        <input type="checkbox" name="" id="check1" class="opc">
+                        <label for="check1"> Usibras</label>
+                        <input type="checkbox" name="" id="check2" class="opc">
+                        <label for="check2"> Fan Postos</label>
+                        <input type="checkbox" name="" id="check3" class="opc">
+                        <label for="check3"> Fan Construções</label>
+                        <br>
+                        <input type="checkbox" name="" id="check4" class="opc">
+                        <label for="check4"> Fan Distribuidora</label>
+                        <input type="checkbox" name="" id="check5" class="opc">
+                        <label for="check5"> Fan Capital</label>
+                        <input type="checkbox" name="" id="check6" class="opc">
+                        <label for="check6"> Fan Plus</label>
+                    </div>
+                    <div class="termos">
+                        <input type="checkbox" id="check7" class="check">
+                        <label for="check7" >Concordo com a Politica de Privacidade</label>
+                        <br>
+                        <input type="checkbox" id="check8" class="check">
+                        <label for="check8" >Aceito receber informações do grupo Fan</label>
+                    </div>
+                    <button class="submit" id="submit" onclick="cadastro()">Enviar</button>
                 </form>
             </div>
         </section>
@@ -64,7 +80,7 @@
         <section class="video">
             <div class="video_fan">
                 <video src="video/O Grupo FAN.mp4" controls></video>
-            </div>
+            </div>       
         </section>
 
         <section class="empresas_galeria">
@@ -90,75 +106,81 @@
 
         <section class="informativo">
             <article class="galeria_titulo">
-                <p>Somos compostos por <strong>6 empresas</strong> 
-                <br> que <strong>crescem</strong> juntas todos os dias</p>
+                <h3>Somos compostos por <strong>6 empresas</strong> 
+                <br> que <strong>crescem</strong> juntas todos os dias</h3>
             </article>
 
             <div class="cards">
                 <article class="figure">
                     <figure>
-                        <img src="image/logo_sem_fundo.png" alt="">
+                        <img src="image/usibras.jpg" alt="">
                         <figcaption class="caption">
-                            <strong>construções</strong> 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus. Integer vehicula mattis congue. Phasellus dignissim nisl sem, eu pellentesque ipsum efficitur nec. Maecenas magna elit, mattis non ultrices et, viverra non lectus. In ac elit venenatis libero tempus.</p>
+                            <strong>Usibras</strong> 
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus.</p>
                         </figcaption>
-                        <a href="#">saiba mais</a>
+                        <br>
+                        <a href="#">Saiba Mais</a>
                     </figure>
                 </article>
             
                 <article  class="figure">
                     <figure>
-                        <img src="image/logo_sem_fundo.png" alt="">
+                        <img src="image/construcoes.jpg" alt="">
                         <figcaption class="caption">
-                            <strong>construções</strong> 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus. Integer vehicula mattis congue. Phasellus dignissim nisl sem, eu pellentesque ipsum efficitur nec. Maecenas magna elit, mattis non ultrices et, viverra non lectus. In ac elit venenatis libero tempus.</p>
+                            <strong> FAN Construções</strong> 
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus.</p>
                         </figcaption>
-                        <a href="#">saiba mais</a>
+                        <br>
+                        <a href="#">Saiba Mais</a>
                     </figure>
                 </article>
         
             
                 <article class="figure">
                     <figure>
-                        <img src="image/logo_sem_fundo.png" alt="">
+                        <img src="image/distribuidora.jpg" alt="">
                         <figcaption class="caption">
-                            <strong>construções</strong> 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus. Integer vehicula mattis congue. Phasellus dignissim nisl sem, eu pellentesque ipsum efficitur nec. Maecenas magna elit, mattis non ultrices et, viverra non lectus. In ac elit venenatis libero tempus. </p>
+                            <strong>FAN Distribuidora</strong> 
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus. </p>
                         </figcaption>
-                        <a href="#">saiba mais</a>
+                        <br>
+                        <a href="#">Saiba Mais</a>
                     </figure>
                 </article>
 
                 <article class="figure">
                     <figure>
-                        <img src="image/logo_sem_fundo.png" alt="">
+                        <img src="image/postos.jpg" alt="">
                         <figcaption class="caption">
-                            <strong>construções</strong> 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus. Integer vehicula mattis congue. Phasellus dignissim nisl sem, eu pellentesque ipsum efficitur nec. Maecenas magna elit, mattis non ultrices et, viverra non lectus. In ac elit venenatis libero tempus. </p>
+                            <strong> FAN Postos</strong> 
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus. </p>
                         </figcaption>
-                        <a href="#">saiba mais</a>
+                        <br>
+                        <a href="#">Saiba Mais</a>
                     </figure>
                 </article>
             
                 <article class="figure">
                     <figure>
-                        <img src="image/logo_sem_fundo.png" alt="">
+                        <img src="image/capital.jpg" alt="">
                         <figcaption class="caption">
-                            <strong>construções</strong> 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus. Integer vehicula mattis congue. Phasellus dignissim nisl sem, eu pellentesque ipsum efficitur nec. Maecenas magna elit, mattis non ultrices et, viverra non lectus. In ac elit venenatis libero tempus. </p>
+                            <strong>FAN Capital</strong> 
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus.</p>
                         </figcaption>
-                        <a href="#">saiba mais</a>
+                        <br>
+                        <a href="#">Saiba Mais</a>
                     </figure>
                 </article>
             
                 <article class="figure">
                     <figure >
-                        <img src="image/logo_sem_fundo.png" alt="">
+                        <img src="image/fanplus.jpg" alt="">
                         <figcaption class="caption">
-                            <strong>construções</strong> 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus. Integer vehicula mattis congue. Phasellus dignissim nisl sem, eu pellentesque ipsum efficitur nec. Maecenas magna elit, mattis non ultrices et, viverra non lectus. In ac elit venenatis libero tempus.</p>
+                            <strong>FAN Plus</strong> 
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus.</p>
                         </figcaption>
-                        <a href="#">saiba mais</a>
+                        <br>
+                        <a href="#">Saiba Mais</a>
                     </figure>
                 </article>
             </div>
