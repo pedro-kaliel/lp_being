@@ -11,34 +11,28 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg bg-warning d-flex justify-content-evenly">
+    <nav class="navbar navbar-expand-lg bg-secondary">
       <div class="container d-flex justify-content-evenly">
-        <figure class=" navbar-brand bg-danger text-center" href="#">
+        <figure class=" navbar-brand  text-center" href="#">
           <img src="image/logo_branca_sem_fundo.png" alt="">
         </figure>
-        <div class="col d-none d-lg-block bg-danger" id="navbarText">
-          <ul class="navbar-nav">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">link 1<span class="sr-only"></a>
+              <a class="nav-link" aria-current="page" href="#">Nossas Empresas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">link 2</a>
+              <a class="nav-link" href="#">Contato</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">link 3</a>
+              <a class="nav-link" href="#" tabindex="-1">Cadastre-se</a>
             </li>
           </ul>
-        </div>
-        <div class="dropdown  d-lg-none d-lg-block">
-          <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Links
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Link 1</a></li>
-            <li><a class="dropdown-item" href="#">Link 2</a></li>
-            <li><a class="dropdown-item" href="#">Link 3</a></li>
-          </ul>
-        </div>
       </div>
     </nav>
   </header>
@@ -46,7 +40,7 @@
   <main>  
     <section class="bg-danger d-flex p-2 bd-highlight d-flex justify-content-evenly">
       <div class="container d-flex justify-content-between">
-        <article  class="d-flex flex-column-reverse  bg-warning" style="height: 400px;">
+        <article  class="d-flex flex-column-reverse  bg-secondary" style="height: 400px;">
           <h1>Há 60 anos o grupo FAN faz mais...</h1>
           <strong>Somos compostos por 6 empresas que crescem juntas diariamente</strong>
           <h2>Conheça o que podemos fazer por você</h2>
@@ -56,11 +50,12 @@
     
     <section class="bg-danger d-flex p-2 bd-highlight justify-content-evenly ">
       <div class="container d-flex justify-content-evenly row">
-        <figure class="col-lg-6 d-none d-lg-block">
+
+        <figure class="col d-none d-lg-block" style="height: 560px;">
           <img src="image/conteudo.png" alt="">
         </figure>
 
-        <form class="bg-white col-lg-6" style="height: 560px;">
+        <form class="bg-white col" style="height: 560px;">
           <div class="">
             <h3>Inscrição</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. </p>
@@ -125,15 +120,15 @@
       </div> 
     </section>
 
-    <section class="bg-danger ">
-      <div class="container d-flex justify-content-center">
+    <section class="bg-secondary">
+      <div class="d-flex justify-content-center ">
         <video class=" bg-warning" src="video/O Grupo FAN.mp4" controls>
         </video>
       </div>    
     </section>
 
     <section>
-      <div class="card-group " style="height: 300px;">
+      <div class="card-group d-flex " style="height: 400px;">
         <div class="card bg-danger rounded-0">
           <p>coluna 1</p>
         </div>
@@ -155,65 +150,74 @@
       </div>
     </section>
 
-    <section class="bg-danger d-flex justify-content-center">
+    <section class="bg-danger d-flex flex-column ">
+      <article class="d-inline-block text-center bg-success">
+        <h4>Somos compostos por 6 empresas que crescem juntas diariamente</h4>
+      </article>
 
-      <div  class="card-group d-flex row " style="width: 70%; margin: 20px;">
+      <div  class="card-group d-flex row justify-content-center align-center" style="margin: 50px;">
         <article class="col-lg-4">
           <figure class="card">
+            <img src="image/capital.jpg" class="w-25" alt="">
             <figcaption class="card-body">
               <strong class="card-title">Titulo 1</strong>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus.</p>
-              <a href="#" class="btn btn-primary w-100">Saiba Mais</a>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus.</p>
+              <a href="#" class="btn btn-outline-danger p-3 w-100">Saiba Mais</a>
             </figcaption>
           </figure>
         </article>
 
         <article class="col-lg-4">
           <figure class="card">
+            <img src="image/distribuidora.jpg" class="w-25" alt="">
             <figcaption class="card-body">
               <strong class="card-title">Titulo 2</strong>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus.</p>
-              <a href="#" class="btn btn-primary w-100">Saiba Mais</a>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus.</p>
+              <a href="#" class="btn btn-outline-danger p-3 w-100">Saiba Mais</a>
             </figcaption>
           </figure>
         </article>
 
         <article class="col-lg-4">
           <figure class="card">
+            <img src="image/distribuidora.jpg" class="w-25" alt="">
             <figcaption class="card-body">
               <strong class="card-title">Titulo 3</strong>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus.</p>
-              <a href="#" class="btn btn-primary w-100">Saiba Mais</a>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus.</p>
+              <a href="#" class="btn btn-outline-danger p-3 w-100">Saiba Mais</a>
             </figcaption>
           </figure>
         </article>
 
         <article class="col-lg-4">
           <figure class="card">
+            <img src="image/usibras.jpg" class="w-25" alt="">
             <figcaption class="card-body">
               <strong class="card-title">Titulo 4</strong>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus.</p>
-              <a href="#" class="btn btn-primary w-100">Saiba Mais</a>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus.</p>
+              <a href="#" class="btn btn-outline-danger p-3 w-100">Saiba Mais</a>
             </figcaption>
           </figure>
         </article>
 
         <article class="col-lg-4">
           <figure class="card">
+            <img src="image/fanplus.jpg" class="w-25" alt="">
             <figcaption class="card-body">
               <strong class="card-title">Titulo 5</strong>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus.</p>
-              <a href="#" class="btn btn-primary w-100">Saiba Mais</a>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus.</p>
+              <a href="#" class="btn btn-outline-danger p-3  w-100">Saiba Mais</a>
             </figcaption>
           </figure>
         </article>
 
         <article class="col-lg-4">
           <figure class="card">
+            <img src="image/fanplus.jpg" class="w-25" alt="">
             <figcaption class="card-body">
               <strong class="card-title">Titulo 6</strong>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus.</p>
-              <a href="#" class="btn btn-primary w-100">Saiba Mais</a>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus.</p>
+              <a href="#" class="btn btn-outline-danger p-3 w-100">Saiba Mais</a>
             </figcaption>
           </figure>
         </article>
@@ -222,10 +226,10 @@
   </main>
 
   <footer class="bg-secondary d-flex justify-content-evenly">
-    <figure class="bg-warning">
-        <p>logo footer</p>
+    <figure class="  text-justify">
+        <img src="image/logo_branca_sem_fundo.png" alt="">
     </figure>
-    <a href="#" class=" bg-warning  p-4 text-justify"><p>Política de prívacidade</p></a>     
+    <a href="#" class="  p-4 text-justify text-decoration-none text-white"><strong>Política de prívacidade</strong></a>     
   </footer>
 </body>
 </html>
