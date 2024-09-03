@@ -11,12 +11,12 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg bg-warning d-flex justify-content-between">
+    <nav class="navbar navbar-expand-lg bg-warning d-flex justify-content-evenly">
       <div class="container d-flex justify-content-evenly">
-        <figure class=" navbar-brand bg-danger text-center w-25" href="#">
+        <figure class=" navbar-brand bg-danger text-center" href="#">
           <img src="image/logo_branca_sem_fundo.png" alt="">
         </figure>
-        <div class=" bg-danger w-50" id="navbarText">
+        <div class="col d-none d-lg-block bg-danger" id="navbarText">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="#">link 1<span class="sr-only"></a>
@@ -29,6 +29,16 @@
             </li>
           </ul>
         </div>
+        <div class="dropdown  d-lg-none d-lg-block">
+          <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Links
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Link 1</a></li>
+            <li><a class="dropdown-item" href="#">Link 2</a></li>
+            <li><a class="dropdown-item" href="#">Link 3</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
@@ -36,15 +46,11 @@
   <main>  
     <section class="bg-danger d-flex p-2 bd-highlight d-flex justify-content-evenly">
       <div class="container d-flex justify-content-between">
-        <article  class="d-flexbox align-items-end flex-row bg-warning" style="height: 400px;">
+        <article  class="d-flex flex-column-reverse  bg-warning" style="height: 400px;">
           <h1>Há 60 anos o grupo FAN faz mais...</h1>
           <strong>Somos compostos por 6 empresas que crescem juntas diariamente</strong>
           <h2>Conheça o que podemos fazer por você</h2>
         </article>
-
-        <div class=" bg-danger w-50 p-3">
-          <p></p>
-        </div>
       </div>
     </section>
     
@@ -54,9 +60,9 @@
           <img src="image/conteudo.png" alt="">
         </figure>
 
-        <form class="bg-white col-lg-6" >
+        <form class="bg-white col-lg-6" style="height: 560px;">
           <div class="">
-            <h2>Inscrição</h2>
+            <h3>Inscrição</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. </p>
           </div>
          
@@ -69,7 +75,7 @@
               <input type="text" placeholder="Segmento" class="form-control w-75" id="segmento">
           </div>
           <span>Quero saber mais informações desses negócios:</span>
-          <table class="checks">
+          <table class="container">
               <tr>
                   <td>
                   <input type="checkbox" name="" id="check1" class="opc">
@@ -99,7 +105,7 @@
                   </td>
               </tr>
           </table>
-          <table class="termos">
+          <table class="container">
               <tr>
                   <td>
                       <input type="checkbox" id="check7" class="check">
@@ -114,35 +120,36 @@
               </tr>
           </table>
           <br>
-          <button class="btn btn-dark" id="submit" onclick="cadastro()">Enviar</button>
+          <button class="btn btn-dark w-100 p-3" id="submit" onclick="">Enviar</button>
         </form>
       </div> 
     </section>
 
-    <section class="bg-danger d-flex">
-      <div class="container d-flex justify-content-center" style="width: 100%;">
-        <video class=" bg-warning" src="video/O Grupo FAN.mp4" controls></video>
+    <section class="bg-danger ">
+      <div class="container d-flex justify-content-center">
+        <video class=" bg-warning" src="video/O Grupo FAN.mp4" controls>
+        </video>
       </div>    
     </section>
 
     <section>
-      <div class="card-group" style="height: 300px;">
-        <div class="card bg-danger rounded-0 col-lg-2">
+      <div class="card-group " style="height: 300px;">
+        <div class="card bg-danger rounded-0">
           <p>coluna 1</p>
         </div>
-        <div class="card bg-dark rounded-0 col-lg-2">
+        <div class="card bg-dark rounded-0">
           <p>coluna 2</p>
         </div>
-        <div class="card bg-primary rounded-0 col-lg-2">
+        <div class="card bg-primary rounded-0">
           <p>coluna 3</p>
         </div>
-        <div class="card bg-secondary rounded-0 col-lg-2">
+        <div class="card bg-secondary rounded-0">
           <p>coluna 4</p>
         </div>
-        <div class="card bg-warning rounded-0 col-lg-2">
+        <div class="card bg-warning rounded-0">
           <p>coluna 5</p>
         </div>
-        <div class="card bg-success rounded-0 col-lg-2">
+        <div class="card bg-success rounded-0">
           <p>coluna 6</p>
       </div>
       </div>
@@ -156,7 +163,7 @@
             <figcaption class="card-body">
               <strong class="card-title">Titulo 1</strong>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus.</p>
-              <a href="#" class="btn btn-primary">Saiba Mais</a>
+              <a href="#" class="btn btn-primary w-100">Saiba Mais</a>
             </figcaption>
           </figure>
         </article>
@@ -166,7 +173,7 @@
             <figcaption class="card-body">
               <strong class="card-title">Titulo 2</strong>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus.</p>
-              <a href="#" class="btn btn-primary">Saiba Mais</a>
+              <a href="#" class="btn btn-primary w-100">Saiba Mais</a>
             </figcaption>
           </figure>
         </article>
@@ -176,7 +183,7 @@
             <figcaption class="card-body">
               <strong class="card-title">Titulo 3</strong>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus.</p>
-              <a href="#" class="btn btn-primary">Saiba Mais</a>
+              <a href="#" class="btn btn-primary w-100">Saiba Mais</a>
             </figcaption>
           </figure>
         </article>
@@ -186,7 +193,7 @@
             <figcaption class="card-body">
               <strong class="card-title">Titulo 4</strong>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus.</p>
-              <a href="#" class="btn btn-primary">Saiba Mais</a>
+              <a href="#" class="btn btn-primary w-100">Saiba Mais</a>
             </figcaption>
           </figure>
         </article>
@@ -196,7 +203,7 @@
             <figcaption class="card-body">
               <strong class="card-title">Titulo 5</strong>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus.</p>
-              <a href="#" class="btn btn-primary">Saiba Mais</a>
+              <a href="#" class="btn btn-primary w-100">Saiba Mais</a>
             </figcaption>
           </figure>
         </article>
@@ -206,7 +213,7 @@
             <figcaption class="card-body">
               <strong class="card-title">Titulo 6</strong>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar ex sapien. Donec varius luctus efficitur. Cras mattis imperdiet sem eget tincidunt. Vivamus egestas lorem id ornare mattis. Nunc maximus et turpis at euismod. Etiam at congue nulla, in interdum tellus.</p>
-              <a href="#" class="btn btn-primary">Saiba Mais</a>
+              <a href="#" class="btn btn-primary w-100">Saiba Mais</a>
             </figcaption>
           </figure>
         </article>
